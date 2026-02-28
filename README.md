@@ -11,6 +11,7 @@ git lfs pull
 ``
 - **Clone this repo**
 - **Open via Unity Hub**: Click "Add" -> "Add project from disk" and select the folder.
+- Make sure the "**Version Control**" Setting in Unity is set to "**Visible Meta Files**"
 
 ---
 
