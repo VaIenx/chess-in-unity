@@ -30,8 +30,8 @@ public class ClickDetector : MonoBehaviour
                 // SCHRITT 2: Figur bewegen
                 if (ActiveFigure != null)
                 {
-                    ActiveFigure.transform.position = new Vector3(mousePos.x, mousePos.y, ActiveFigure.transform.position.z);
-                    Debug.Log("Figur bewegt nach: " + mousePos);
+                    ActiveFigure.transform.position = new Vector3(((int)mousePos.x) + 0.5f , ((int)mousePos.y) +0.5f, ActiveFigure.transform.position.z);
+                    Debug.Log("Figur bewegt nach: " + (int)mousePos.x + (int)mousePos.y);
                     
                     ActiveFigure = null; // Auswahl aufheben
                 }
