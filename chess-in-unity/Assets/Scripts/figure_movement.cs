@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class figure_movement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // Diese Funktion wird von Unity automatisch aufgerufen, 
+    // wenn mit der Maus auf den Collider des Objekts geklickt wird.
+    private void OnMouseDown()
     {
+        // Gibt den Namen des Objekts aus, auf das geklickt wurde
+        Debug.Log("Klick auf: " + gameObject.name);
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Oder gib die Position aus, um dein Koordinatensystem zu prüfen
+        Debug.Log("Position des Feldes: " + transform.position);
     }
 }
